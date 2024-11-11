@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech to Text Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Speech to Text Converter</h1>
+    <p id="output">Your speech will appear here...</p>
+    <button id="start">Start Listening</button>
+    <button id="stop">Stop Listening</button>
+
+    <script>
+        const SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
+        if (SpeechRecognition) {
+            const recognition = new SpeechRecognition();
+            recognition.lang = 'en-US';
+            recognition.interimResults = false;
+            recognition.maxAlternatives = 1;
+
+            document.getElementById('start').addEventListener('click', () => {
+                recognition.start();
+            });
+
+            document.getElementById('stop').addEventListener('click', () => {
+                recognition.stop();
+            });
+
+            recognition.addEventListener('result', (event) => {
+                document.getElementById('output').innerText = event.results[0][0].transcript;
+            });
+
+            recognition.addEventListener('error', (event) => {
+                document.getElementById('output').innerText = 'Error: ' + event.error;
+            });
+        } else {
+            alert('Your browser does not support Speech Recognition');
+        }
+    </script>
+</body>
+</html>
