@@ -1,0 +1,100 @@
+/*hello Side_End Devs., this is the CSS part of Speech-to-Text converter */
+/*I hope you like it, if you have any suggestions or queries, feel free to ask me on my social media handles*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    font-family: sans-serif;
+    background-color: rgba(71, 9, 9, 0.5);
+    
+        
+}
+h2{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: rgb(252, 252, 252);
+    animation: pulse 2s infinite alternate;
+    cursor: pointer;
+}
+h2:hover{
+    color: brown;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: purple;
+    width: 50%;
+    height: 500px;
+    background-color: rgb(229, 200, 160, 0.7S);
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 18px;
+}
+#result{
+    border: 1px solid rgb(6, 36, 48);
+    padding: 40px 50px;
+    height: 320px;
+    width: 90%;
+    margin-bottom: 30px;
+    background: linear-gradient(108deg,#ac0295,#05e0f0);
+    border-radius: 10px;
+}
+.button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+button{
+    background-color: #dd84c2;
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 1s;
+    outline: none;
+    border: none;
+    animation: pulse 2s infinite alternate;
+}
+button:hover{
+    background-color: #f55656;
+    transform: scale(1.1);
+}
+@keyframes pulse {
+    from{
+        transform : scale(1);
+    }
+    to{
+        transform: scale(1.1);
+    }
+}
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    font-size: 14px;
+}
+footer p {
+    justify-content: left;
+    margin: 0;
+}
+
+
+
+

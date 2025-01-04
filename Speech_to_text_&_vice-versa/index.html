@@ -1,0 +1,45 @@
+<!--hello Side_End Devs., this is the HTML part of Speech-to-Text converter -->
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speech to Text Converter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <style>
+        body{
+        background-image: url('img1.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;}
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+        <h2>Speech-to-Text</h2>
+        <div id="result" class="result-box" style=" background-color: rgba(0, 0, 0, 0.5);"></div>
+        <div class="button-container">
+            <button onclick="startConverting()">
+                <i class="fa fa-microphone"></i>
+            </button>
+            <button onclick="stopConverting()">
+                <i class="fa fa-stop"></i>
+            </button>
+            <button onclick="speakText()">
+                <i class="fa-solid fa-volume-high"></i>
+            </button>
+        </div>
+    </div>
+    <footer>
+        <p>&copy;side_end.dev All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+
