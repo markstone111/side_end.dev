@@ -1,0 +1,8 @@
+get your launcher icon (rounded) here (path : app/re/mipmap/ic_launcher_round),
+
+named as follows - 
+ic_launcher_round.webp (hdpi) (72 X 72)
+ic_launcher_round.webp (mdpi) (48 X 48)
+ic_launcher_round.webp (xhdpi) (96 X 96)
+ic_launcher_round.webp (xxhdpi) (144 X 144)
+ic_launcher_round.webp (xxxhdpi) (192 X 192)
