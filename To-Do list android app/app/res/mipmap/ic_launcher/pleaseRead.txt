@@ -1,0 +1,8 @@
+get your launcher icon here (path : app/re/mipmap/ic_launcher),
+
+named as follows - 
+ic_launcher.webp (hdpi) (72 X 72)
+ic_launcher.webp (mdpi) (48 X 48)
+ic_launcher.webp (xhdpi) (96 X 96)
+ic_launcher.webp (xxhdpi) (144 X 144)
+ic_launcher.webp (xxxhdpi) (192 X 192)
