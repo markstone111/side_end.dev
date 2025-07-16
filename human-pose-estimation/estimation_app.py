@@ -42,9 +42,17 @@ thres = st.sidebar.slider("Detection Confidence Threshold", 0, 100, 50, 5) / 100
 def process_frame(frame):
     frameWidth = frame.shape[1]
     frameHeight = frame.shape[0]
-    
+
+    # ensure frame has 3 channels
+    if len(frame.shape) == 2:  # Grayscale
+        frame = cv2.cvtColor(frame, cv2.COLOR_GRAY2RGB)
+    elif frame.shape[2] == 4:  # RGBA
+        frame = cv2.cvtColor(frame, cv2.COLOR_RGBA2RGB)
+
     # Process body pose estimation
-    net.setInput(cv2.dnn.blobFromImage(frame, 1.0, (368, 368), (127.5, 127.5, 127.5), swapRB=True, crop=False))
+    net.setInput(cv2.dnn.blobFromImage(frame, 1.0, (368, 368),
+                                       (127.5, 127.5, 127.5),
+                                       swapRB=True, crop=False))
     out = net.forward()
     out = out[:, :19, :, :]
 
@@ -56,7 +64,7 @@ def process_frame(frame):
         y = int((frameHeight * point[1]) / out.shape[2])
         points.append((x, y) if conf > thres else None)
 
-    # draw the pose skeleon
+    # Draw the pose skeleton
     for pair in POSE_PAIRS:
         partFrom = pair[0]
         partTo = pair[1]
@@ -80,7 +88,6 @@ def process_frame(frame):
                 y = int(landmark.y * frameHeight)
                 cv2.circle(frame, (x, y), 5, (255, 0, 0), -1)  # Draw the finger landmarks
 
-            # Optionally, connect the hand landmarks to form the hand skeleton
             for connection in mp_hands.HAND_CONNECTIONS:
                 start = connection[0]
                 end = connection[1]
