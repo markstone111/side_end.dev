@@ -56,7 +56,7 @@ All conversations are logged in a CSV file for history and reference.
 ```bash
 git clone https://github.com/markstone111/your-chatbot-repo.git
 cd your-chatbot-repo
-
+```
 
 **2️⃣ Create a virtual environment (optional but recommended)**
 ```bash
@@ -66,17 +66,17 @@ python -m venv venv
 source venv/bin/activate
 # On Windows:
 venv\Scripts\activate
-
+```
 
 **3️⃣ Install dependencies**
 ```bash
 pip install -r requirements.txt
-
+```
 
 **4️⃣ Run the chatbot**
 ```bash
 streamlit run chatBot.py
-
+```
 
 
 
