@@ -26,7 +26,8 @@ POSE_PAIRS = [
 ]
 
 # Load the model
-net = cv2.dnn.readNetFromTensorflow("graph_opt.pb")
+MODEL_PATH = os.path.join(os.path.dirname(__file__), "graph_opt.pb")
+net = cv2.dnn.readNetFromTensorflow(MODEL_PATH)
 
 # Initialize MediaPipe for hand landmarks
 mp_hands = mp.solutions.hands
