@@ -54,8 +54,8 @@ All conversations are logged in a CSV file for history and reference.
 
 **1️⃣ Clone this repository**
 ```bash
-git clone https://github.com/markstone111/your-chatbot-repo.git
-cd your-chatbot-repo
+git clone https://github.com/markstone111/side_end.dev.git
+cd ChatBot(Intent-Based)
 ```
 
 **2️⃣ Create a virtual environment (optional but recommended)**
@@ -96,3 +96,4 @@ Learn about the project, features, and planned enhancements.
 
 👋 Author
 Built with ❤️ by Nikunj Maheshwari — side_end.dev
+- https://nikunjmaheshwari.vercel.app
