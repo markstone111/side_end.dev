@@ -1,4 +1,4 @@
-Human Pose Estimation Using Machine Learning
+Human Pose Estimation Using Machine Learning 🤖
 # Overview
 This project implements a real-time human pose estimation system using machine learning. The system detects and visualizes human body keypoints and hand landmarks in images, videos, and live streams. Built using OpenCV, MediaPipe, and Streamlit, it provides an interactive interface for easy usage.
 
@@ -9,25 +9,25 @@ This project implements a real-time human pose estimation system using machine l
 - Adjustable confidence threshold for pose detection.
 
 
-# Installation
+# Installation ⬇️
 To run this project, follow these steps:
 
 Clone the repository:
 
-bash
-```
+```bash
+
 git clone https://github.com/markstone111/side_end.dev.git
 cd human-pose-estimation
+```
+
 Install the required dependencies:
-```
-bash
-```
+
+```bash
 pip install -r requirements.txt
 ```
 Run the application:
 
-bash
-```
+```bash
 streamlit run estimation_app.py
 ```
 
@@ -41,7 +41,6 @@ human-pose-estimation/
 ├── estimation_app.py     # Main application script  
 ├── requirements.txt      # Dependencies  
 ├── README.md             # Project documentation  
-└── LICENSE (optional)    # License information  
 
 
 # Requirements
@@ -56,13 +55,14 @@ pillow
 Install them using the requirements.txt file provided.
 
 
-# Future Improvements
-- Integrate advanced models like MoveNet for improved accuracy.
-- Optimize performance for low-resource devices.
-- Add functionality for group pose detection.
+# Future Improvements 🚀
+- Integrate advanced models like MoveNet for improved accuracy 🧠.
+- Optimize performance for low-resource devices 💻.
+- Add functionality for group pose detection 🧑‍🤝‍🧑.
 
 
 # Author
-Developed by Nikunj Maheshwari 
-- https://github.com/markstone111/side_end.dev/new/main/human-pose-estimation
+Developed by Nikunj Maheshwari ❣️
+- https://nikunjmaheshwari.vercel.app
 
+# Feel free to contribute, fork, or customize this project to suit your needs! and if you like it then don't forget to give it a star ⭐.
