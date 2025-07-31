@@ -15,20 +15,21 @@ To run this project, follow these steps:
 Clone the repository:
 
 bash
-
-git clone https://github.com/your-username/human-pose-estimation.git
+```
+git clone https://github.com/markstone111/side_end.dev.git
 cd human-pose-estimation
 Install the required dependencies:
-
+```
 bash
-
+```
 pip install -r requirements.txt
+```
 Run the application:
 
 bash
-
+```
 streamlit run estimation_app.py
-
+```
 
 # Project Structure
 
@@ -62,6 +63,6 @@ Install them using the requirements.txt file provided.
 
 
 # Author
-Developed by Your Nikunj Maheshwari 
+Developed by Nikunj Maheshwari 
 - https://github.com/markstone111/side_end.dev/new/main/human-pose-estimation
 
