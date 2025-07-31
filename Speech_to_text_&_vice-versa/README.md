@@ -1,9 +1,9 @@
-Hello Dunia, This is a basic stt and tts, built with Javascript and HTML
+# Hello Dunia, This is Nikunj Maheshwari
 
 
 # 🗣️ Text-to-Speech & Speech-to-Text Web App
 
-A simple and interactive web application that converts text to speech and speech to text using modern web technologies like **HTML**, **CSS**, and **JavaScript**. It utilizes the **Web Speech API** to handle both speech synthesis (text-to-speech) and speech recognition (speech-to-text).
+A simple and interactive web application that converts text to speech and speech to text using modern web technologies like **HTML**, **CSS**, and **JavaScript**. It utilizes the handle both speech synthesis (text-to-speech) and speech recognition (speech-to-text).
 
 ## 🚀 Features
 
@@ -30,7 +30,7 @@ A simple and interactive web application that converts text to speech and speech
 
 - Start speaking or typing and use the controls to test the features.
 
-## ⚠️ Make sure to use a modern browser like Chrome for full Web Speech API support.
+- ⚠️ Make sure to use a modern browser like Chrome for full Web Speech API support.
 
 
 ## 🧠 Future Improvements
