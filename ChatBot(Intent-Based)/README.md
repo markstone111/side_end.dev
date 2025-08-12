@@ -19,10 +19,15 @@ All conversations are logged in a CSV file for history and reference.
 ## 🗂️ Project Structure
 
 📂 Project Root
+
 ├── chatBot.py # Main chatbot app
+
 ├── intents.json # Intent patterns & responses
+
 ├── chat_log.csv # Chat history log (auto-created)
+
 ├── response.mp3 # Temporary audio file for TTS
+
 └── other files...
 
 ---
