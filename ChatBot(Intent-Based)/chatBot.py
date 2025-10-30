@@ -9,7 +9,7 @@ import streamlit as st
 import random
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.linear_model import LogisticRegression
-import sounddevice as sd
+# import sounddevice as sd
 import numpy as np
 import speech_recognition as sr
 import pyttsx3
@@ -213,3 +213,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
